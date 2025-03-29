@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import './assets/fonts/plein.css';
+@import './assets/fonts/plus-jakarta-sans.css';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-green-default: #02291A;
+  --brand-green-lemon-light: #85E7C1;
+  --brand-green-dark: #045939;
+  --brand-gray-default: #EFF2F1;
+  --bg-label: #E2FFBC;
+
+  --title-100-light: #141716;
+  --body-100-light: #313332;
+
+  /* Font family definitions */
+  --font-sans: "Plein-Regular", sans-serif;
+  --font-heading: "PlusJakartaSans-Regular", sans-serif;
+
+  /* Font size definitions */
+  --font-size-title: 48px;
+  --font-size-subtitle: 28px;
+  --font-size-base: 16px;
+  --font-size-label: 14px;
+
+  /* Spacing definitions */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border radius definitions */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-regular); 
+  color: var(--body-100-light);
+}
+
+/* Titles */
+h1 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold); 
+  font-size: var(--font-size-title);
+  color: var(--title-100-light);
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium); 
+  font-size: var(--font-size-subtitle);
+  color: var(--title-100-light);
+}
+
+/* Descriptions */
+p {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-regular); 
+  font-size: var(--font-size-base);
+  color: var(--body-100-light);
+}
+
