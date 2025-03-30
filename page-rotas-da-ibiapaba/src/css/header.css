@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.header {
+  @apply flex flex-col items-center justify-center p-4
+  md:flex-row md:justify-between 
+  lg:flex-row;
+}
+
+.nav-bar ul {
+  @apply flex flex-col items-center gap-4 
+  md:flex-row 
+  lg:flex-row;
+}
+
+.access-links {
+  @apply flex gap-2 items-center;
+}

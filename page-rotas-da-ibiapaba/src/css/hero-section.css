@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.hero-section {
+  @apply flex flex-col justify-center pb-10
+  bg-[url(../assets/img/container-introduction.png)]
+  bg-cover bg-center;
+}
+.hero-text-section {
+  @apply w-2xl break-words 
+  flex flex-col items-center justify-center 
+  p-8 gap-3 mt-30 mb-30;
+}
+.hero-text-section h1,
+p {
+  @apply leading-snug text-center text-(--brand-gray-default);
+}

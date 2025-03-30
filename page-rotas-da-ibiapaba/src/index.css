@@ -22,7 +22,7 @@ body {
   --font-heading: "PlusJakartaSans-Regular", sans-serif;
 
   /* Font size definitions */
-  --font-size-title: 48px;
+  --font-size-title: 40px;
   --font-size-subtitle: 28px;
   --font-size-base: 16px;
   --font-size-label: 14px;
@@ -57,7 +57,6 @@ h1 {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-bold); 
   font-size: var(--font-size-title);
-  color: var(--title-100-light);
 }
 
 h2 {
@@ -73,5 +72,20 @@ p {
   font-weight: var(--font-weight-regular); 
   font-size: var(--font-size-base);
   color: var(--body-100-light);
+}
+
+a{
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-regular); 
+  font-size: var(--font-size-base);
+  color: var(--brand-gray-default);
+
+}
+
+button{
+  @apply 
+  bg-(--brand-green-default) 
+  p-2 text-(--brand-gray-default)
+  rounded-(--radius-sm);
 }
 

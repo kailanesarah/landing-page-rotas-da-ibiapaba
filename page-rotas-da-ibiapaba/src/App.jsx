@@ -1,9 +1,11 @@
+import Header from "./components/header/header";
+import HeroSection from "./containers/heroSection";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl text-blue-600 font-bold underline">Hello world!</h1>
+      <HeroSection/>
     </>
   );
 }
