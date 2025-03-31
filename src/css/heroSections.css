@@ -3,7 +3,7 @@
 //Hero Section
 .hero-section {
   @apply flex flex-col justify-center pb-10
-  bg-cover bg-center;
+  ;
 }
 .hero-text-section {
   @apply w-2xl break-words 

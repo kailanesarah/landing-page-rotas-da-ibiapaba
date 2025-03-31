@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.security-content-section {
+  @apply flex flex-col w-full items-center justify-center md:flex-row;
+}
+
+.text {
+  @apply flex flex-col items-center justify-center text-center p-9 gap-4 mb-6 md:items-start md:text-start;
+}
+
+
+.partners-content-section {
+  @apply flex flex-col md:flex-row md:items-center;
+}
+
+.partners-text{
+  @apply w-full text-center items-center p-8 md:w-1/2 md:text-start md:items-start;
+}
+.partners-img{
+  @apply w-full h-full rounded-2xl md:w-1/2;
+}

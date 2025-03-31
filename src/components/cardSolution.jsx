@@ -1,9 +1,7 @@
 import Image from "../assets/img/cta.png";
 import "../css/cards.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const CardSolution = () => {
 	const contentCard = [
@@ -53,19 +51,21 @@ const CardSolution = () => {
 	];
 
 	return (
-		
+		<div className="card-solution">
 			<Swiper
-				spaceBetween={20}
+				spaceBetween={8}
 				slidesPerView={3}
-				direction="horizontal"
+				direction="horizontal" 
+				freeMode={true} 
 				breakpoints={{
-					
+			
 					300: {
 						slidesPerView: 1, 
-						direction: "vertical", 
+						direction: "horizontal", 
+						freeMode: true, 
 					},
-				
-					728: {
+					
+					768: {
 						slidesPerView: 3, 
 						direction: "horizontal", 
 					},
@@ -75,7 +75,7 @@ const CardSolution = () => {
 					<SwiperSlide key={objects.id}>
 						<div className="card">
 							{objects.id % 2 === 0 ? (
-								<div className="p-3 bg-(--brand-green-dark) (--radius-sm) gap-2">
+								<div className="p-3 bg-(--brand-green-dark) rounded-2xl gap-2">
 									<img src={objects.image} alt="" />
 									<div className="content-solution">
 										<h4 className="text-white">{objects.title}</h4>
@@ -83,7 +83,7 @@ const CardSolution = () => {
 									</div>
 								</div>
 							) : (
-								<div className=" p-3 bg-(--brand-green-lemon-light) (--radius-sm) gap-2">
+								<div className=" p-3 bg-(--brand-green-lemon-light) rounded-2xl gap-2">
 									<div className="content-solution">
 										<h4 className="text-(--brand-green-dark)">
 											{objects.title}
@@ -99,7 +99,7 @@ const CardSolution = () => {
 					</SwiperSlide>
 				))}
 			</Swiper>
-	
+		</div>
 	);
 };
 

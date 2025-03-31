@@ -1,11 +1,11 @@
 import ButtonRegister from "../components/buttonRegister";
 import Header from "../components/header/header";
-import "../css/hero-sections.css";
+import "../css/heroSections.css";
 import Container from "../containers/containerDefault";
 
 const HeroSection = () => {
 	return (
-		<section className="hero-section bg-[url(../assets/img/container-introduction.png)]">
+		<section className="hero-section bg-[url(../assets/img/container-introduction.png)] bg-cover bg-center">
 			<Header />
 			<Container>
 				<div className="hero-text-section">

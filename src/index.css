@@ -5,6 +5,9 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-regular);
+  color: var(--body-100-light);
 }
 
 :root {
@@ -17,28 +20,36 @@ body {
   --title-100-light: #141716;
   --body-100-light: #313332;
 
-  /* Font family definitions */
+  /* Fontes */
   --font-sans: "Plein-Regular", sans-serif;
   --font-heading: "PlusJakartaSans-Regular", sans-serif;
 
-  /* Font size definitions */
-  --font-size-title: 40px;
-  --font-size-subtitle: 18px;
-  --font-size-base: 16px;
-  --font-size-label: 12px;
+  /* Tamanhos de Fonte */
+  --font-size-title-mobile: 28px;
+  --font-size-title-sm: 30px;
+  --font-size-title-md: 36px;
+  --font-size-title-lg: 38px;
 
-  /* Spacing definitions */
+  --font-size-subtitle-mobile: 18px;
+  --font-size-subtitle-sm: 20px;
+  --font-size-subtitle-md: 22px;
+  --font-size-subtitle-lg: 24px;
+
+  --font-size-base-mobile: 14px;
+  --font-size-base-md: 16px;
+
+  /* Espaçamentos */
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 32px;
 
-  /* Border radius definitions */
+  /* Bordas */
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 20px;
 
-  /* Font weights */
+  /* Pesos */
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -46,52 +57,64 @@ body {
   --font-weight-black: 900;
 }
 
-body {
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight-regular);
-  color: var(--body-100-light);
-}
-
-/* Titles */
+/* Tipografia Responsiva */
 h1 {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-title-mobile);
 }
 
 h2 {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-subtitle-mobile);
   color: var(--title-100-light);
 }
 
 h4 {
-  font-family: var(--font-size-subtitle);
+  font-family: var(--font-sans);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-subtitle-mobile);
 }
 
-/* Descriptions */
-p {
+p, a {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-base-mobile);
 }
 
-a {
-  font-family: var(--font-heading);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-base);
+a{
   color: var(--brand-gray-default);
 }
 
-.container{
-  @apply p-20 max-h-full max-w-full;
+.container {
+  padding: var(--spacing-md);
+  max-height: 100%;
+  max-width: 100%;
 }
 
 button {
-  @apply bg-(--brand-green-default) 
-  p-2 text-(--brand-gray-default)
-  rounded-(--radius-sm);
+  background-color: var(--brand-green-default);
+  padding: var(--spacing-sm);
+  color: var(--brand-gray-default);
+  border-radius: var(--radius-sm);
+}
+
+/* Responsividade */
+@media (min-width: 640px) { /* sm */
+  h1 { font-size: var(--font-size-title-sm); }
+  h2 { font-size: var(--font-size-subtitle-sm); }
+}
+
+@media (min-width: 768px) { /* md */
+  h1 { font-size: var(--font-size-title-md); }
+  h2 { font-size: var(--font-size-subtitle-md); }
+  p, a { font-size: var(--font-size-base-md); }
+  .container { padding: var(--spacing-lg); }
+}
+
+@media (min-width: 1024px) { /* lg */
+  h1 { font-size: var(--font-size-title-lg); }
+  h2 { font-size: var(--font-size-subtitle-lg); }
+  .container { padding: var(--spacing-xl); }
 }

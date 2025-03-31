@@ -1,11 +1,11 @@
 
 import CardSolution from "../components/cardSolution";
-import "../css/solution-section.css";
+import "../css/solutionSection.css";
 
 const SolutionSection = () => {
 	return (
-		<section className="container">
-            <div className="solution-section">
+		<section className="solution-sectioncontainer">
+            <div className="container">
 				<div className="solution-text-section">
 					<h1>Muito mais funcionalidades e conveniência para o seu negócio!</h1>
 					<p>
