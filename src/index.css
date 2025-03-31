@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@import './assets/fonts/plein.css';
-@import './assets/fonts/plus-jakarta-sans.css';
+@import "./assets/fonts/plein.css";
+@import "./assets/fonts/plus-jakarta-sans.css";
 
 body {
   margin: 0;
@@ -8,11 +8,11 @@ body {
 }
 
 :root {
-  --brand-green-default: #02291A;
-  --brand-green-lemon-light: #85E7C1;
+  --brand-green-default: #02291a;
+  --brand-green-lemon-light: #85e7c1;
   --brand-green-dark: #045939;
-  --brand-gray-default: #EFF2F1;
-  --bg-label: #E2FFBC;
+  --brand-gray-default: #eff2f1;
+  --bg-label: #e2ffbc;
 
   --title-100-light: #141716;
   --body-100-light: #313332;
@@ -23,9 +23,9 @@ body {
 
   /* Font size definitions */
   --font-size-title: 40px;
-  --font-size-subtitle: 28px;
+  --font-size-subtitle: 18px;
   --font-size-base: 16px;
-  --font-size-label: 14px;
+  --font-size-label: 12px;
 
   /* Spacing definitions */
   --spacing-sm: 8px;
@@ -48,44 +48,50 @@ body {
 
 body {
   font-family: var(--font-sans);
-  font-weight: var(--font-weight-regular); 
+  font-weight: var(--font-weight-regular);
   color: var(--body-100-light);
 }
 
 /* Titles */
 h1 {
   font-family: var(--font-sans);
-  font-weight: var(--font-weight-bold); 
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-title);
 }
 
 h2 {
   font-family: var(--font-sans);
-  font-weight: var(--font-weight-medium); 
+  font-weight: var(--font-weight-medium);
   font-size: var(--font-size-subtitle);
   color: var(--title-100-light);
 }
 
+h4 {
+  font-family: var(--font-size-subtitle);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-subtitle);
+}
+
 /* Descriptions */
 p {
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight-regular); 
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-light);
   font-size: var(--font-size-base);
-  color: var(--body-100-light);
 }
 
-a{
+a {
   font-family: var(--font-heading);
-  font-weight: var(--font-weight-regular); 
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-base);
   color: var(--brand-gray-default);
-
 }
 
-button{
-  @apply 
-  bg-(--brand-green-default) 
+.container{
+  @apply p-20 max-h-full max-w-full;
+}
+
+button {
+  @apply bg-(--brand-green-default) 
   p-2 text-(--brand-gray-default)
   rounded-(--radius-sm);
 }
-

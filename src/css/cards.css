@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.card-solution {
+  @apply relative;
+}
+
+.card {
+  @apply w-full gap-2
+  h-auto rounded-(--radius-sm) items-center
+  justify-around flex flex-col m-10;
+}
+
+.card img {
+  @apply w-full h-50 rounded-(--radius-sm);
+}
+
+.content-solution {
+  @apply flex flex-col gap-3 p-2 pb-4 h-50;
+
+  h4,
+  p {
+    @apply text-left;
+  }
+}
