@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.faq-section{
+  @apply flex flex-col gap-3;
+}
+
+.faq {
+    @apply w-full md:w-1/2 mx-auto ;
+  }
+
+  .faq-item {
+    @apply  mt-2 bg-(--brand-gray-default) p-4 rounded-2xl;
+  }
+  
+
+  .question {
+    @apply flex  items-center justify-between cursor-pointer ;
+  }
+  
+  .faq-item h5 {
+    @apply  font-semibold text-(--brand-green-default) transition-all duration-300;
+  }
+  
+  /* Estilo do texto da resposta */
+  .answer p{
+    @apply mt-2 text-(--brand-green-dark) text-base leading-relaxed ;
+  }
+  
+  /* Estilo para o ícone ou botão de toggle da pergunta */
+  .faq-item p:hover,
+  .faq-item h4:hover {
+    @apply text-(--brand-green-dark);
+  }
+  
+  /* Adiciona um pequeno efeito de transição ao abrir/fechar a resposta */
+  .faq-item p {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  /* Estilo quando a pergunta está aberta */
+  .faq-item.open .faq-answer {
+    @apply block;
+  }
+  
+  /* Estilo para o ícone ou elemento de interação (exemplo simples) */
+  .faq-item p {
+    @apply  text-(--body-100-light) hover:text-(--brand-green-dark) cursor-pointer;
+  }
+  

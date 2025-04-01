@@ -1,5 +1,5 @@
 import { Lightbulb } from 'lucide-react';
-import "../css/cardSecurity.css";
+import "../css/components/cardSecurity.css";
 const CardSecurity = () => {
     const contentCard = [
         {

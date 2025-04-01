@@ -1,13 +1,16 @@
 import ButtonRegister from "../components/buttonRegister";
 import Header from "../components/header/header";
-import "../css/heroSections.css";
-import Container from "../containers/containerDefault";
+import "../css/containers/heroSections.css";
+import bannerHero from "../assets/img/bannerHero.png";
+
+
 
 const HeroSection = () => {
 	return (
-		<section className="hero-section bg-[url(../assets/img/container-introduction.png)] bg-cover bg-center">
+		<section className="container bg-cover bg-center"  
+		style={{ backgroundImage: `url(${bannerHero})` }}>
+			<div className="hero-section">
 			<Header />
-			<Container>
 				<div className="hero-text-section">
 					<h1>Transforme seu negócio com apenas alguns cliques</h1>
 					<p>
@@ -16,8 +19,12 @@ const HeroSection = () => {
 						para seus clientes.
 					</p>
 					<ButtonRegister />
+
+					
 				</div>
-			</Container>
+
+			</div>
+			
 		</section>
 	);
 };

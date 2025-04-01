@@ -1,5 +1,5 @@
 import Image from "../assets/img/cta.png";
-import "../css/cards.css";
+import "../css/components/cards.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 

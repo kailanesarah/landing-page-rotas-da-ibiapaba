@@ -1,21 +1,45 @@
 @import "tailwindcss";
 
+//SECURITY SECTION
 .security-content-section {
-  @apply flex flex-col w-full items-center justify-center md:flex-row;
+  @apply flex flex-row;
 }
 
 .text {
-  @apply flex flex-col items-center justify-center text-center p-9 gap-4 mb-6 md:items-start md:text-start;
+  @apply w-1/2 flex flex-col items-center justify-center text-center p-9 gap-4 mb-6 md:items-start md:text-start;
 }
 
+//PARTNERS SECTION
 
 .partners-content-section {
-  @apply flex flex-col md:flex-row md:items-center;
+  @apply flex flex-col md:flex-row md:items-center w-full items-center justify-center;
 }
 
-.partners-text{
-  @apply w-full text-center items-center p-8 md:w-1/2 md:text-start md:items-start;
+.partners-map-section {
+  @apply flex flex-col order-2 w-full items-center justify-center md:w-1/2 p-0 md:order-1;
 }
-.partners-img{
+
+//MAP SECTION
+.map {
+  @apply w-full h-auto  md:w-100 md:h-100 rounded-2xl;
+}
+.partners-text {
+  @apply w-full text-center items-center p-4 order-1 md:w-1/2 md:text-start md:items-start md:order-2;
+}
+.partners-img {
   @apply w-full h-full rounded-2xl md:w-1/2;
+}
+
+//FAQ SECTION
+
+.faq-section{
+  @apply flex flex-col items-center justify-center;
+}
+
+.faq-text-section{
+  @apply w-full md:w-1/2 items-center justify-center;
+
+  h1, p{
+    @apply text-center;
+  }
 }

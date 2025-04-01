@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.security-content-section {
+  @apply flex flex-col md:flex-row;
+}
+
+.text {
+  @apply w-full flex flex-col items-center justify-center text-center p-9 gap-4 mb-6 
+  md:items-start md:text-start md:w-1/2;
+}

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.values-section{
+    @apply  bg-(--brand-green-dark) p-(--spacing-sm) md:p-(--spacing-md);
+}
+
+.values{
+    @apply flex flex-col items-center justify-center md:flex-row
+    p-(--spacing-sm) md:p-(--spacing-md);
+}
+
+.text-section{
+    @apply  flex flex-col gap-3 items-start justify-center w-full text-(--brand-gray-default) 
+    md:w-1/2 p-3;
+
+    p{
+        @apply w-full break-words;
+    }
+}
+

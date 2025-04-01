@@ -1,7 +1,7 @@
 import NavBar from "./navBar";
 import LogoRotas from "./logo";
 import ButtonRegister from "../buttonRegister";
-import "../../css/header.css";
+import "../../css/components/header.css";
 
 const Header = () => {
   return (
