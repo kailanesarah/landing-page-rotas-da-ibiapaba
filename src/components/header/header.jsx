@@ -8,12 +8,14 @@ const Header = () => {
     <header className="header">
       <LogoRotas />
       <NavBar />
-      <div className="access-links">
+      <div className=" gap-4 w-auto items-center hidden md:flex flex-row">
         <u>
           <a href="/login">Área do cliente</a>
         </u>
         <ButtonRegister />
       </div>
+
+
     </header>
   );
 };

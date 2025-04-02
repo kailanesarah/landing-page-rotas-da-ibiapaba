@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.footer-section{
+    @apply bg-(--body-100-light) p-5;
+}
+.text-footer-section{
+    @apply flex flex-col items-center justify-center gap-4 text-white md:justify-around  md:flex-row;
+
+    h6{
+        @apply flex flex-row items-center text-center;
+    }
+}

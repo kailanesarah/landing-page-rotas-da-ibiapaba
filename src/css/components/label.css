@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.label-component{
+    @apply flex flex-row items-center justify-center pt-1 pb-1 pl-1 pr-1 bg-(--bg-label) text-(--brand-green-default) text-xs rounded-2xl
+    w-40 mb-6;
+}

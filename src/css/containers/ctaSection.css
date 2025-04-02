@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.container{
+    @apply mb-0 md:mb-0 ;
+}
+.cta-text-section{
+    @apply flex flex-col items-center justify-center p-4 md:p-10;
+
+    h1{
+        @apply text-white text-center break-words w-full md:w-1/2;
+    }
+}

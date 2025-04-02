@@ -8,6 +8,7 @@ body {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-regular);
   color: var(--body-100-light);
+  @apply overflow-x-hidden;
 }
 
 :root {
@@ -62,7 +63,7 @@ h1 {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-title-mobile);
-  @apply leading-10 mb-3;
+  @apply leading-10 mb-1;
 }
 
 h2 {
@@ -82,7 +83,7 @@ p, a {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-light);
   font-size: var(--font-size-base-mobile);
-  @apply mb-6 break-words ;
+  @apply mb-3 break-words ;
 }
 
 a{

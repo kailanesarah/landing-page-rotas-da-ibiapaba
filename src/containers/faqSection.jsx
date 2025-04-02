@@ -1,11 +1,14 @@
 import ButtonRegister from "../components/buttonRegister";
 import FAQ from "../components/faq";
+import LabelComponent from "../components/label";
 import "../css/containers/faqSection.css";
 const FaqSection = () => {
 	return (
-		<section className="container">
-			<div className="faq-section ">
+		<section className="container faq-section">
+			
+			<LabelComponent text="FAQ"/>
 			<div className="faq-text-section">
+				
 				<h1>Dúvidas frequentes</h1>
 				<p>
 					Dúvidas sobre como nossa plataforma pode beneficiar você? Aqui,
@@ -18,7 +21,7 @@ const FaqSection = () => {
 			<FAQ />
 			<ButtonRegister/>
 
-			</div>
+		
 			
 		</section>
 	);

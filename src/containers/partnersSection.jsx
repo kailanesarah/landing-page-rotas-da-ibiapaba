@@ -1,8 +1,9 @@
+import LabelComponent from "../components/label";
 import "../css/containers/partnersSection.css";
 const PartnersSection = () => {
   return (
-    <section className="container">
-      <div className="partners-section">
+    <section className="container partners-section">
+     
         <div className="partners-content-section">
           <div className="partners-map-section">
             <iframe
@@ -15,6 +16,8 @@ const PartnersSection = () => {
           </div>
 
           <div className="partners-text">
+
+            <LabelComponent text={"Parceiros"} />
             <h1>Encontre os parceiros mais próximos de você!</h1>
             <p>
               Conecte-se com parceiros estratégicos ao seu redor para expandir
@@ -25,7 +28,7 @@ const PartnersSection = () => {
             </p>
           </div>
         </div>
-      </div>
+   
     </section>
   );
 };

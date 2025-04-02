@@ -1,14 +1,16 @@
 import fotoTeam from "../assets/img/fotoTeam.png";
 import fotoTeamAll from "../assets/img/fotoTeamAll.png";
+import LabelComponent from "../components/label";
 import "../css/containers/aboutSection.css";
 import ValuesSection from "./valuesSection";
 
 const AboutSection = () => {
 	return (
 		<>
-			<section className="about-section">
+			<section className="about-section ">
 				<div className="about">
 					<div className="about-text-section">
+						<LabelComponent text="Sobre nós"/>
 						<h1>Somos a NexTech!</h1>
 						<p>
 							Rotas da Ibiapaba é uma solução desenvolvida pela empresa NexTech.

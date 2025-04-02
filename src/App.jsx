@@ -5,7 +5,10 @@ import SecuritySection from "./containers/secutitySection";
 import PartnersSection from "./containers/partnersSection";
 import FaqSection from "./containers/faqSection";
 import AboutSection from "./containers/aboutSection";
+import CtaSection from "./containers/ctaSection";
 import "./index.css";
+import Footer from "./components/footer";
+
 
 function App() {
 	return (
@@ -17,6 +20,8 @@ function App() {
 			<PartnersSection />
 			<FaqSection />
 			<AboutSection />
+			<CtaSection/>
+			<Footer/>
 		
 		</>
 	);

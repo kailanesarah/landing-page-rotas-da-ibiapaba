@@ -2,7 +2,7 @@ import ButtonRegister from "../components/buttonRegister";
 import Header from "../components/header/header";
 import "../css/containers/heroSections.css";
 import bannerHero from "../assets/img/bannerHero.png";
-
+import LabelComponent from "../components/label";
 
 
 const HeroSection = () => {
@@ -12,6 +12,7 @@ const HeroSection = () => {
 			<div className="hero-section">
 			<Header />
 				<div className="hero-text-section">
+					<LabelComponent text="Lançamento em breve"/>
 					<h1>Transforme seu negócio com apenas alguns cliques</h1>
 					<p>
 						Cadastre-se e tenha acesso a um sistema completo que aumenta sua
