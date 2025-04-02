@@ -6,7 +6,6 @@ const Footer = () => {
         <footer className="footer-section">
             <div className="container text-footer-section">
                 <h6>RotasDaIbiapaba - 2025 | Direitos reservados.</h6>
-                <NavBar />
                 <h6>Criado e desenvolvido por: NexTech</h6>
 
             </div>

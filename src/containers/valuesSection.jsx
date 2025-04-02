@@ -3,7 +3,7 @@ import "../css/containers/valuesSection.css";
 const ValuesSection = () => {
 	return (
 		<section className="values-section">
-			<div className="container values">
+			<div className="container values container">
 				<div className="text-section hidden:boder-r-1 md:border-r-1 border-( --brand-gray-default)">
 					<h4>Visão</h4>
 					<p>
@@ -14,7 +14,7 @@ const ValuesSection = () => {
 				</div>
 
 
-				<div className="text-section">
+				<div className="text-section border-t-1 md:border-hidden">
 					<h4>Missão</h4>
 					<p>
 						Buscamos fortalecer a economia local, promover a visibilidade dos

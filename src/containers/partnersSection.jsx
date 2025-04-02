@@ -2,8 +2,7 @@ import LabelComponent from "../components/label";
 import "../css/containers/partnersSection.css";
 const PartnersSection = () => {
   return (
-    <section className="container partners-section">
-     
+    <section className="container">
         <div className="partners-content-section">
           <div className="partners-map-section">
             <iframe

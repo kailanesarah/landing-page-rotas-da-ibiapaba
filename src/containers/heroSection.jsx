@@ -12,7 +12,7 @@ const HeroSection = () => {
 			<div className="hero-section">
 			<Header />
 				<div className="hero-text-section">
-					<LabelComponent text="Lançamento em breve"/>
+					<LabelComponent text="Em breve!"/>
 					<h1>Transforme seu negócio com apenas alguns cliques</h1>
 					<p>
 						Cadastre-se e tenha acesso a um sistema completo que aumenta sua

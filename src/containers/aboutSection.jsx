@@ -8,7 +8,7 @@ const AboutSection = () => {
 	return (
 		<>
 			<section className="about-section ">
-				<div className="about">
+				<div className="about container">
 					<div className="about-text-section">
 						<LabelComponent text="Sobre nós"/>
 						<h1>Somos a NexTech!</h1>

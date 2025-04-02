@@ -16,6 +16,7 @@ body {
   --brand-green-lemon-light: #85e7c1;
   --brand-green-dark: #045939;
   --brand-gray-default: #eff2f1;
+  --brand-black-default: #141716;
   --bg-label: #e2ffbc;
 
   --title-100-light: #141716;
@@ -36,6 +37,7 @@ body {
   --font-size-subtitle-md: 22px;
   --font-size-subtitle-lg: 24px;
 
+  --font-size-base-label: 12px;
   --font-size-base-mobile: 14px;
   --font-size-base-md: 16px;
 
@@ -90,10 +92,14 @@ a{
   color: var(--brand-gray-default);
 }
 
+span{
+  @apply text-(--brand-black-default);
+}
+
 .container {
   max-height: 100%;
   max-width: 100%;
-  @apply mb-10 p-(--spacing-sm) md:mb-20 md:p-(--spacing-md);
+  @apply pt-10 pb-10 p-5 md:mb-50 md:p-(--spacing-md);
 }
 
 
