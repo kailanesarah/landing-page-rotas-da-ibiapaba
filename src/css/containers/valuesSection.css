@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.values-section {
+  @apply bg-(--brand-green-dark);
+}
+
+.values {
+  @apply flex flex-col items-start justify-center md:flex-row;
+}
+
+.text-section {
+  @apply break-words flex flex-col mt-2 gap-3 p-4 items-center justify-center w-full text-(--brand-gray-default) 
+    md:w-1/2 md:pr-8 md:pl-8;
+
+  p {
+    @apply w-full break-words text-center;
+  }
+}

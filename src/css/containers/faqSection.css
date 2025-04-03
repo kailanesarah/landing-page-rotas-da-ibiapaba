@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.faq-section{
+    @apply flex flex-col items-center justify-center;
+  }
+  
+  .faq-text-section{
+    @apply w-full md:w-1/2 items-center justify-center;
+  
+    h1, p{
+      @apply text-center;
+    }
+  }

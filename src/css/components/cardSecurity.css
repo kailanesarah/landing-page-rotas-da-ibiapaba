@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.card-security-container {
+  @apply flex flex-col w-full gap-2 items-center justify-center md:w-1/2 lg:w-1/2;
+}
+.card-security {
+  @apply flex flex-col gap-2 p-4 bg-(--brand-green-dark) rounded-(--radius-sm) w-full;
+}
+.content-security {
+  @apply flex flex-col items-start  justify-center text-white gap-3 break-words;
+}

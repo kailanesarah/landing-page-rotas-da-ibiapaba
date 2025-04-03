@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@import "./assets/fonts/plein.css";
+@import "./assets/fonts/plus-jakarta-sans.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-regular);
+  color: var(--body-100-light);
+  @apply overflow-x-hidden;
+}
+
+:root {
+  --brand-green-default: #02291a;
+  --brand-green-lemon-light: #85e7c1;
+  --brand-green-dark: #045939;
+  --brand-gray-default: #eff2f1;
+  --brand-black-default: #141716;
+  --bg-label: #e2ffbc;
+
+  --title-100-light: #141716;
+  --body-100-light: #313332;
+
+  /* Fontes */
+  --font-sans: "Plein-Regular", sans-serif;
+  --font-heading: "PlusJakartaSans-Regular", sans-serif;
+
+  /* Tamanhos de Fonte */
+  --font-size-title-mobile: 28px;
+  --font-size-title-sm: 30px;
+  --font-size-title-md: 36px;
+  --font-size-title-lg: 38px;
+
+  --font-size-subtitle-mobile: 18px;
+  --font-size-subtitle-sm: 20px;
+  --font-size-subtitle-md: 22px;
+  --font-size-subtitle-lg: 24px;
+
+  --font-size-base-label: 12px;
+  --font-size-base-mobile: 14px;
+  --font-size-base-md: 16px;
+
+  /* Espaçamentos */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Bordas */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  /* Pesos */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/* Tipografia Responsiva */
+h1 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-title-mobile);
+  @apply leading-10 mb-1;
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-subtitle-mobile);
+  color: var(--title-100-light);
+}
+
+h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-subtitle-mobile);
+}
+
+p, a {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-base-mobile);
+  @apply mb-3 break-words ;
+}
+
+a{
+  color: var(--brand-gray-default);
+}
+
+span{
+  @apply text-(--brand-black-default);
+}
+
+.container {
+  max-height: 100%;
+  max-width: 100%;
+  @apply pt-10 pb-10 p-5 md:mb-50 md:p-(--spacing-md);
+}
+
+
+button {
+  background-color: var(--brand-green-default);
+  padding: var(--spacing-sm);
+  color: var(--brand-gray-default);
+  border-radius: var(--radius-sm);
+}
+
+/* Responsividade */
+@media (min-width: 640px) { /* sm */
+  h1 { font-size: var(--font-size-title-sm); }
+  h2 { font-size: var(--font-size-subtitle-sm); }
+}
+
+@media (min-width: 768px) { /* md */
+  h1 { font-size: var(--font-size-title-md); }
+  h2 { font-size: var(--font-size-subtitle-md); }
+  p, a { font-size: var(--font-size-base-md); }
+  .container { padding: var(--spacing-lg); }
+}
+
+@media (min-width: 1024px) { /* lg */
+  h1 { font-size: var(--font-size-title-lg); }
+  h2 { font-size: var(--font-size-subtitle-lg); }
+  .container { padding: var(--spacing-xl); }
+}
