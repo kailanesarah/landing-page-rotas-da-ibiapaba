@@ -35,7 +35,7 @@
 }
 
 .menu-container {
-  @apply md:static md:flex-row md:justify-start md:bg-transparent md:transform-none md:translate-none; 
+  @apply md:static md:flex-row md:justify-start md:bg-transparent md:transform-none md:translate-none lg:transform-none lg:translate-none ; 
 }
 
 
