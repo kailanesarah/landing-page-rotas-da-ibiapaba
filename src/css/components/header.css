@@ -26,16 +26,13 @@
 }
 
 .menu-container {
-  @apply fixed inset-x-0 top-0 flex flex-col justify-center items-center bg-(--body-100-light)
-    transition-transform duration-300 transform translate-x-full gap-6; 
+  @apply fixed inset-x-0 top-0 flex flex-col justify-center items-center 
+  bg-(--body-100-light) transition-transform duration-300 transform translate-x-full gap-6
+  md:static md:flex-row md:bg-transparent md:translate-x-0;
 }
 
 .menu-container.open {
   @apply translate-x-0 p-10; 
-}
-
-.menu-container {
-  @apply md:static md:flex-row md:justify-start md:bg-transparent md:transform-none md:translate-none lg:transform-none lg:translate-none ; 
 }
 
 
