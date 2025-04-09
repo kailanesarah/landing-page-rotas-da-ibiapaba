@@ -1,9 +1,18 @@
 @import "tailwindcss";
-.security-content-section {
-  @apply flex flex-col md:flex-row;
+.security {
+  @apply mx-4 md:mx-12;}
+
+/* Container de conteúdo */
+.security__content {
+  @apply  flex flex-col md:flex-row justify-around items-center gap-12;
 }
 
-.text {
-  @apply w-full flex flex-col items-center justify-center text-center p-9 gap-4 mb-6 
-  md:items-start md:text-start md:w-1/2;
+/* Texto da seção */
+.security__text {
+  @apply flex flex-col gap-2 text-center md:text-left;
+}
+
+.security__text h1 {
+  @apply text-3xl
+   md:text-4xl font-bold max-w-xl ;
 }

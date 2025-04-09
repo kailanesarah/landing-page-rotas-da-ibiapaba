@@ -9,10 +9,7 @@ const Header = () => {
       <LogoRotas />
       <NavBar />
       <div className=" gap-4 w-auto items-center hidden md:flex flex-row">
-        <u>
-          <a href="/login">Área do cliente</a>
-        </u>
-        <ButtonRegister />
+        <ButtonRegister text="Saiba mais!" />
       </div>
 
 

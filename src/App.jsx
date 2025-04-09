@@ -1,27 +1,30 @@
-import HeroSection from "./containers/heroSection";
-import Banner from "./components/banner";
-import SolutionSection from "./containers/solutionsSection";
-import SecuritySection from "./containers/secutitySection";
-import PartnersSection from "./containers/partnersSection";
-import FaqSection from "./containers/faqSection";
 import AboutSection from "./containers/aboutSection";
-import CtaSection from "./containers/ctaSection";
+import HeroSection from "./containers/heroSection";
+import PartnersSection from "./components/partnersCard";
+import SecuritySection from "./containers/secutitySection";
+import SolutionSection from "./containers/solutionsSection";
+
 import "./index.css";
+import FaqSection from "./containers/faqSection";
 import Footer from "./components/footer";
+import CtaSection from "./containers/ctaSection";
+
 
 
 function App() {
 	return (
 		<>
 			<HeroSection />
-			<Banner />
-			<SolutionSection />
-			<SecuritySection />
-			<PartnersSection />
-			<FaqSection />
-			<AboutSection />
+			<AboutSection/>
+			<SolutionSection/>
+			<SecuritySection/>
+			<PartnersSection/>
+			<FaqSection/>
 			<CtaSection/>
+
 			<Footer/>
+
+			
 		
 		</>
 	);

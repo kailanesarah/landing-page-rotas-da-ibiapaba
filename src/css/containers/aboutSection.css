@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
-.about{
-    @apply flex flex-col gap-3 items-center justify-center md:flex-row bg-(--brand-green-default);
+.about {
+  @apply w-full bg-white px-4 flex justify-center items-center;
 }
 
-.about-text-section{
-    @apply w-full p-3 md:w-1/2 md:p-6 ;
-
-    h1,p{
-        @apply text-(--brand-gray-default);
-    }
+.about__content {
+  @apply max-w-7xl w-full flex flex-col md:flex-col items-center gap-2;
 }
 
-.about-photos-section{
-    @apply flex flex-col w-full md:w-1/2 p-6 gap-2;
+.about__text {
+  @apply flex flex-col gap-2 text-center max-w-2xl;
+}
+
+.about__img {
+  @apply w-full max-w-md md:max-w-lg rounded-xl shadow-lg;
 }

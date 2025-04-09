@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-.solution-text-section {
+.solution__text{
   @apply w-full flex flex-col items-center justify-center gap-3;
 
   h1,
   p {
-    @apply w-auto break-words text-center md:w-2/3 lg:w-2/3;
+    @apply w-auto break-words text-center md:max-w-2xl lg:w-2/3;
   }
 }

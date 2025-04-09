@@ -1,12 +1,22 @@
 @import "tailwindcss";
 
-.footer-section{
-    @apply bg-(--brand-black-default) p-5;
-}
-.text-footer-section{
-    @apply flex flex-col items-center justify-center gap-4 text-white md:justify-around  md:flex-row;
 
-    h6{
-        @apply flex flex-row items-center text-center;
-    }
+.footer-section {
+  @apply w-full bg-(--title-100-light) text-white py-8;
+}
+
+.footer-container {
+  @apply w-[90%] max-w-6xl mx-auto text-center space-y-2 text-sm md:text-base;
+}
+
+.footer-copy {
+  @apply text-gray-200;
+}
+
+.footer-dev {
+  @apply text-gray-400;
+}
+
+.dev-name {
+  @apply font-semibold text-green-300;
 }

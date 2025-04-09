@@ -1,31 +1,37 @@
-import ButtonRegister from "../components/buttonRegister";
-import Header from "../components/header/header";
 import "../css/containers/heroSections.css";
-import bannerHero from "../assets/img/bannerHero.png";
+import bannerHero from "../assets/img/cards/cliente.jpg";
 import LabelComponent from "../components/label";
-
+import Header from "../components/header/header";
+import Form from "../components/header/form";
+import Container from "./containerDefault";
 
 const HeroSection = () => {
 	return (
-		<section className="container bg-cover bg-center"  
-		style={{ backgroundImage: `url(${bannerHero})` }}>
-			<div className="hero-section">
-			<Header />
-				<div className="hero-text-section">
-					<LabelComponent text="Em breve!"/>
-					<h1>Transforme seu negócio com apenas alguns cliques</h1>
-					<p>
-						Cadastre-se e tenha acesso a um sistema completo que aumenta sua
-						visibilidade, agiliza suas vendas e oferece uma experiência única
-						para seus clientes.
-					</p>
-					<ButtonRegister />
+		<section className="hero">
+			<img src={bannerHero} alt="Banner Hero" className="hero__image" />
 
-					
-				</div>
-
+			<div className="hero__overlay"> </div>
+			<div className="relative z-20">
+				<Header />
 			</div>
-			
+
+			<Container>
+			<div className="pb-10 md:pb-20"> </div>
+				<div className="hero__content">
+					
+					<div className="hero__text">
+						<LabelComponent text="Lançamento em breve!" />
+						<h1>
+						Cadastre-se para ter acesso antecipado ao sistema que vai impulsionar suas vendas.
+						</h1>
+						<p>
+							Deixe seus dados na nossa lista exclusiva e saia na frente!
+						</p>
+					</div>
+
+					<Form />
+				</div>
+			</Container>
 		</section>
 	);
 };

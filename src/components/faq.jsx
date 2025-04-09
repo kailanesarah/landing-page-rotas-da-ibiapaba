@@ -30,12 +30,6 @@ const FAQ = () => {
 				"de acesso.",
 		},
 		{
-			pergunta: "Posso pagar com cartão ou PIX?",
-			resposta:
-				"Sim! Os totens aceitam diversos meios de pagamento, incluindo cartão de crédito,\n" +
-				"débito e PIX, para garantir mais praticidade.",
-		},
-		{
 			pergunta: "Sou dono de um estabelecimento. Como posso participar?",
 			resposta: "É simples! É só fazer seu cadastro pelo nosso site.",
 		},
@@ -59,13 +53,6 @@ const FAQ = () => {
 		},
 		{
 			pergunta:
-				"Posso escolher quais estabelecimentos parceiros venderão meus produtos?",
-			resposta:
-				"Sim! Você pode definir em quais locais seus produtos estarão disponíveis,\n" +
-				"criando parcerias estratégicas para o seu negócio.",
-		},
-		{
-			pergunta:
 				"Se eu tiver problemas técnicos com o totem, como posso obter suporte?",
 			resposta:
 				"Nossa equipe de suporte está disponível para ajudar sempre que necessário.\n" +
@@ -83,7 +70,7 @@ const FAQ = () => {
 		<div className="faq">
 			{contentFaq.map((object, index) => (
 				// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-				<div className="faq-item" key={index}>
+				<div className="faq__item" key={index}>
 					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 					<div className="question" onClick={() => toggleAnswer(index)}>
 						{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}

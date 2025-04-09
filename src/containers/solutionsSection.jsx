@@ -1,19 +1,16 @@
-
 import CardSolution from "../components/cardSolution";
 import LabelComponent from "../components/label";
 import "../css/containers/solutionSection.css";
+import Container from "./containerDefault";
 
 const SolutionSection = () => {
 	return (
-		<section className="container" >
-			<div className="solution-section ">
-			
-			
-				<div className="solution-text-section">
-					<LabelComponent text={"Soluções"}/>
-				
-				
-					
+		<section className="solution">
+			<Container>
+			<div className="solution__content ">
+				<div className="solution__text">
+					<LabelComponent text={"Soluções"} />
+
 					<h1>Muito mais funcionalidades e conveniência para o seu negócio!</h1>
 					<p>
 						Nossa plataforma oferece tudo o que você precisa para otimizar
@@ -22,6 +19,7 @@ const SolutionSection = () => {
 				</div>
 				<CardSolution />
 			</div>
+			</Container>
 		</section>
 	);
 };

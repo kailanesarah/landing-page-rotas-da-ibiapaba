@@ -1,0 +1,33 @@
+@import "tailwindcss";
+.partners__card {
+  @apply w-full py-15 px-0;
+}
+
+.partners__wrapper {
+  @apply flex flex-col 
+  md:flex-row overflow-hidden
+   w-full ;
+}
+
+.partners__image {
+  @apply w-full md:w-1/2 max-h-[500px];
+}
+
+.partners__content {
+  @apply bg-(--brand-green-base) w-full md:w-1/2 flex flex-col items-center justify-center;
+}
+.image__content {
+  @apply w-full h-full object-cover;
+}
+
+.partners__text {
+  @apply w-full md:w-1/2  flex flex-col justify-center px-8 py-12;
+}
+
+.partners__title {
+  @apply text-white font-bold  text-center md:text-left;
+}
+
+.partners__description {
+  @apply text-white max-w-2xl leading-relaxed text-center md:text-left mt-4;
+}

@@ -1,64 +1,57 @@
-import parceria from "../assets/img/parceria.webp";
-import rendimentos from "../assets/img/rendimentos.webp";
-import acesso from "../assets/img/acesso.webp";
-import seguranca from "../assets/img/seguranca.webp";
-import comissoes from "../assets/img/comissoes.webp";
-import tablet from "../assets/img/dashboard.webp";
-
 import "../css/components/cards.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
+import casal from "../assets/img/cards/casal.jpg";
+import dashboard from "../assets/img/cards/dashboard.png";
+import cliente from "../assets/img/cards/cliente.png";
+import tela_dashboard from "../assets/img/cards/tela_dashboard.png";
+import seguranca from "../assets/img/cards/seguranca.png";
+import acesso from "../assets/img/cards/acesso.png";
 
 const CardSolution = () => {
 	const contentCard = [
 		{
 			id: 1,
-			image: rendimentos,
-			title:
-				"Receba seus rendimentos diretamente na sua conta de forma prática",
+			image: casal,
+			title: "Receba seus rendimentos diretamente na sua conta de forma prática",
 			description:
-				"Você pode resgatar seus ganhos a qualquer momento e transferi-los diretamente" +
-				" para a conta de sua escolha, com total conveniência e agilidade.",
+				"Você pode resgatar seus ganhos a qualquer momento e transferi-los diretamente para a conta de sua escolha, com total conveniência e agilidade.",
 		},
 		{
 			id: 2,
-			image: parceria,
+			image: cliente,
 			title: "Feche parcerias flexíveis com qualquer estabelecimento",
 			description:
-				"Adicione facilmente novos parceiros à sua rede e amplie " + 
-				"suas oportunidades de negócios.",
+				"Adicione facilmente novos parceiros à sua rede e amplie suas oportunidades de negócios.",
 		},
 		{
 			id: 3,
-			image: tablet,
+			image: tela_dashboard,
 			title: "Visão completa do seu negócio",
 			description:
-				"Acompanhe de forma fácil e intuitiva, por meio de um dashboard interativo,"+
-				" sua receita, parceiros ativos, vendas e o histórico de tickets do seu estabelecimento.",
+				"Acompanhe de forma fácil e intuitiva, por meio de um dashboard interativo, sua receita, parceiros ativos, vendas e o histórico de tickets do seu estabelecimento.",
 		},
 		{
 			id: 4,
-			image: comissoes,
+			image: dashboard,
 			title: "Ganhe comissões",
 			description:
-				"A cada produto de parceiros vendido em seu estabelecimento você ganha comissões, "
-				+"ampliando suas fontes de receita enquanto oferece uma experiência única e diversificada aos seus clientes.",
+				"A cada produto de parceiros vendido em seu estabelecimento você ganha comissões, ampliando suas fontes de receita enquanto oferece uma experiência única e diversificada aos seus clientes.",
 		},
 		{
 			id: 5,
 			image: seguranca,
 			title: "Segurança garantida",
 			description:
-				"Suas transações e dados são protegidos com" + 
-				"tecnologia de ponta para total confiança.",
+				"Suas transações e dados são protegidos com tecnologia de ponta para total confiança.",
 		},
 		{
 			id: 6,
 			image: acesso,
 			title: "Acesso em tempo real",
 			description:
-				"Visualize todos os status dos tickets e "+
-				"performance de vendas do seu negócio.",
+				"Visualize todos os status dos tickets e performance de vendas do seu negócio.",
 		},
 	];
 
@@ -67,43 +60,56 @@ const CardSolution = () => {
 			<Swiper
 				spaceBetween={8}
 				slidesPerView={3}
-				direction="horizontal"
 				freeMode={true}
 				breakpoints={{
 					300: {
 						slidesPerView: 1,
-						direction: "horizontal",
-						freeMode: true,
 					},
-
 					768: {
 						slidesPerView: 3,
-						direction: "horizontal",
 					},
 				}}
 			>
-				{contentCard.map((objects) => (
-					<SwiperSlide key={objects.id}>
+				{contentCard.map((item) => (
+					<SwiperSlide key={item.id}>
 						<div className="card">
-							{objects.id % 2 === 0 ? (
-								<div className="p-3 bg-(--brand-green-dark) rounded-2xl gap-2">
-									<img src={objects.image} alt="" className="w-full h-64 object-cover " />
+							{item.id % 2 === 0 ? (
+								<div
+									className="p-3 rounded-2xl gap-2"
+									style={{ backgroundColor: "var(--brand-green-dark)" }}
+								>
+									<img
+										src={item.image}
+										alt={item.title}
+										className="w-full h-64 object-cover"
+									/>
 									<div className="content-solution">
-										<h4 className="text-white">{objects.title}</h4>
-										<p className="text-white">{objects.description}</p>
+										<h4 className="text-white">{item.title}</h4>
+										<p className="text-white">{item.description}</p>
 									</div>
 								</div>
 							) : (
-								<div className=" p-3 bg-(--brand-green-lemon-light) rounded-2xl gap-2">
+								<div
+									className="p-3 rounded-2xl gap-2"
+									style={{ backgroundColor: "var(--brand-green-lemon-light)" }}
+								>
 									<div className="content-solution">
-										<h4 className="text-(--brand-green-dark)">
-											{objects.title}
+										<h4
+											style={{ color: "var(--brand-green-dark)" }}
+										>
+											{item.title}
 										</h4>
-										<p className="text-(--brand-green-dark)">
-											{objects.description}
+										<p
+											style={{ color: "var(--brand-green-dark)" }}
+										>
+											{item.description}
 										</p>
 									</div>
-									<img src={objects.image} alt="" className="w-full h-64 object-cover object-center " />
+									<img
+										src={item.image}
+										alt={item.title}
+										className="w-full h-64 object-cover object-center"
+									/>
 								</div>
 							)}
 						</div>

@@ -1,16 +1,27 @@
 @import "tailwindcss";
 
-//Hero Section
-.hero-section {
-  @apply flex flex-col justify-center pb-8 ;
+.hero {
+  @apply relative w-full h-300 overflow-hidden md:h-200 lg:h-200;
 }
-.hero-text-section {
-  @apply w-full h-100 break-words p-5
-  flex flex-col items-center justify-start
-  md:p-10 gap-3 mt-30 mb-30;
+
+.hero__image {
+  @apply absolute inset-0 w-full h-full object-cover object-center z-0;
+}
+
+.hero__overlay {
+  @apply absolute inset-0 z-10 bg-gradient-to-r from-black/90 md:from-black/50 to-black/5;
+}
+
+.hero__content {
+  @apply relative z-10 flex flex-col items-center justify-center gap-6
+  w-full h-full px-4 py-8 pt-32 md:flex-row md:justify-between md:px-10 md:py-0 lg:px-20;
+}
+
+.hero__text {
+  @apply text-start leading-relaxed text-white w-full max-w-xl md:w-1/2;
 
   h1, p{
-    @apply w-full md:w-1/2 text-center text-(--brand-gray-default);
+    @apply text-white ;
 
   }
 }

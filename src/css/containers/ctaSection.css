@@ -1,12 +1,25 @@
 @import "tailwindcss";
-
-.container{
-    @apply mb-0 md:mb-0 ;
-}
-.cta-text-section{
-    @apply flex flex-col items-center justify-center p-4 md:p-10;
-
-    h1{
-        @apply text-white text-center break-words w-full md:w-1/2;
-    }
-}
+.cta-section {
+    @apply relative w-full bg-cover bg-center bg-no-repeat  px-6 md:px-12;
+  }
+  
+  .cta-overlay {
+    @apply absolute inset-0 bg-black/40 backdrop-blur-sm z-0;
+  }
+  
+  .cta-wrapper {
+    @apply relative z-10 flex flex-col md:flex-row items-center justify-around gap-10 max-w-7xl mx-auto text-white;
+  }
+  
+  .cta-text {
+    @apply space-y-6 max-w-xl;
+  }
+  
+  .cta-title {
+    @apply text-3xl md:text-4xl font-bold leading-tight;
+  }
+  
+  .cta-form {
+    @apply w-full max-w-md;
+  }
+  

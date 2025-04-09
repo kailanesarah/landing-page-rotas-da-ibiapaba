@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
 .header {
-  @apply flex flex-row items-center justify-around p-4 
-  md:flex-row md:justify-around lg:flex-row;
+  @apply fixed top-0 left-0 w-full z-50 px-6 py-1 
+  flex items-center justify-between bg-white;
 }
-
 .navbar {
   @apply p-4 bg-transparent;
 }
@@ -26,13 +25,13 @@
 }
 
 .menu-container {
-  @apply fixed inset-x-0 top-0 flex flex-col justify-center items-center 
+  @apply fixed inset-x-0 top-0 flex flex-col justify-center items-center h-full
   bg-(--body-100-light) transition-transform duration-300 transform translate-x-full gap-6
   md:static md:flex-row md:bg-transparent md:translate-x-0;
 }
 
 .menu-container.open {
-  @apply translate-x-0 p-10; 
+  @apply translate-x-0 p-10 h-full; 
 }
 
 
@@ -50,5 +49,5 @@
 }
 
 .menu-list a {
-  @apply hover:text-(--brand-green-lemon-light) transition duration-200;
+  @apply text-white md:text-(--body-100-light) font-medium hover:text-(--brand-green-dark) transition duration-200;
 }
