@@ -1,5 +1,5 @@
 import "../css/containers/heroSections.css";
-import bannerHero from "../assets/img/cards/cliente.jpg";
+import bannerHero from "../assets/img/cards/imgHero.svg";
 import LabelComponent from "../components/label";
 import Header from "../components/header/header";
 import Form from "../components/header/form";
@@ -16,7 +16,7 @@ const HeroSection = () => {
 			</div>
 
 			<Container>
-			<div className="pb-10 md:pb-20"> </div>
+			<div className="pb-5 md:pb-20"> </div>
 				<div className="hero__content">
 					
 					<div className="hero__text">

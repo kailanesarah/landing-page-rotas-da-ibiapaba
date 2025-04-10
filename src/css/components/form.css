@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 .form-section {
-  @apply flex justify-center items-center py-10 px-4;
+  @apply flex justify-center items-center;
 }
 
 .form-glass {
-  @apply w-full max-w-xl p-6 rounded-2xl shadow-xl bg-white/5 backdrop-blur-md;
+  @apply w-full max-w-xl p-6 rounded-2xl shadow-xl bg-white/8 backdrop-blur-md;
 }
 
 .form-title {
-  @apply text-xl flex gap-3 font-semibold text-white mb-6;
+  @apply text-xl text-center md:text-start flex gap-3 font-semibold text-white mb-6;
 } 
-
+ 
 .form-container { 
   @apply flex flex-col gap-4;
 }

@@ -17,8 +17,14 @@ const CtaSection = () => {
 					<div className="cta-text">
 						<LabelComponent text="Entre em contato" />
 						<h1 className="cta-title">
-							Transforme seu negócio com apenas alguns cliques!
+							Garanta acesso antecipado a plataforma mais completa da região!
 						</h1>
+
+						<p className="cta-description">
+							Cadastre-se agora e seja pioneiro(a) no turismo e no comercio na
+							Serra da Ibiapaba. Teste antes de todo mundo, compartilhe feedback
+							e ajude a moldar o nosso futuro!
+						</p>
 					</div>
 
 					<div className="cta-form">

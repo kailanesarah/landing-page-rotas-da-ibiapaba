@@ -15,14 +15,14 @@ const PartnersCard = () => {
 					/>
 				</div>
 
-				<div className="partners__content pb-5 pr-5 pl-5 md:pr-10 md:pl-10">
+				<div className="partners__content ">
 					<Container>
-						<div className="flex flex-col items-center md:items-start">
+						<div className="pr-5 pl-5 md:pr-20 md:pl-20 flex flex-col items-center md:items-start">
 							<LabelComponent text="Parcerias" />
 							<h1 className="partners__title">
 								Tenha parceiros por toda a Serra da Ibiapaba
 							</h1>
-							<p className="partners__description">
+							<p className="partners__description mb-4">
 								Conecte-se a uma rede sólida de parceiros locais, fortaleça sua
 								presença na região e amplie seus resultados. <br/><br/>
 								Com nossa
@@ -30,8 +30,10 @@ const PartnersCard = () => {
 								necessário para crescer de forma sustentável e eficiente.
 								Clique no botão abaixo e confira os parceiros mais próximos de você!
 							</p>
+
+							<ButtonRegister text="Buscar parceiros" />
 						</div>
-						<ButtonRegister text="Buscar parceiros" />
+						
 					</Container>
 				</div>
 			</div>

@@ -11,7 +11,7 @@
   
 
   .question {
-    @apply flex  items-center justify-between cursor-pointer ;
+    @apply flex items-center justify-between cursor-pointer ;
   }
   
   .faq__item h5 {

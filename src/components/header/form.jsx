@@ -7,7 +7,7 @@ const Form = () => {
 		<section className="form-section">
 			<div className="form-glass">
 				<h4 className="form-title">
-				<Rocket className="text-white" size={50} />
+				<Rocket className="text-white hidden md:flex" size={50} />
 					Seja um dos primeiros a acessar o sistema mais completo da Serra da Ibiapaba
 				</h4>
 				<form className="form-container">

@@ -9,7 +9,7 @@
 }
 
 .hero__overlay {
-  @apply absolute inset-0 z-10 bg-gradient-to-r from-black/90 md:from-black/50 to-black/5;
+  @apply absolute inset-0 z-10 bg-gradient-to-r from-black/60  to-black/0;
 }
 
 .hero__content {
@@ -18,7 +18,7 @@
 }
 
 .hero__text {
-  @apply text-start leading-relaxed text-white w-full max-w-xl md:w-1/2;
+  @apply flex flex-col gap-4 items-center text-center  text-white w-full max-w-xl md:w-1/2 md:text-start md:items-start ;
 
   h1, p{
     @apply text-white ;

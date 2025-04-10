@@ -4,15 +4,20 @@
 
 /* Container de conteúdo */
 .security__content {
-  @apply  flex flex-col md:flex-row justify-around items-center gap-12;
+  @apply  flex flex-col md:flex-row justify-center items-center md:justify-around gap-12;
 }
 
 /* Texto da seção */
 .security__text {
-  @apply flex flex-col gap-2 text-center md:text-left;
+  @apply flex flex-col gap-2 text-center items-center justify-center md:items-start w-full md:w-1/2 md:text-left;
 }
 
 .security__text h1 {
   @apply text-3xl
    md:text-4xl font-bold max-w-xl ;
 }
+
+.security__text p {
+  @apply max-w-xl ;
+}
+ 
