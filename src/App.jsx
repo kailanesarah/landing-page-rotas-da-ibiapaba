@@ -9,25 +9,19 @@ import FaqSection from "./containers/faqSection";
 import Footer from "./components/footer";
 import CtaSection from "./containers/ctaSection";
 
-
-
 function App() {
-	return (
-		<>
-			<HeroSection />
-			<AboutSection/>
-			<SolutionSection/>
-			<SecuritySection/>
-			<PartnersSection/>
-			<FaqSection/>
-			<CtaSection/>
-
-			<Footer/>
-
-			
-		
-		</>
-	);
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <SolutionSection />
+      <SecuritySection />
+      <PartnersSection />
+      <FaqSection />
+      <CtaSection />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

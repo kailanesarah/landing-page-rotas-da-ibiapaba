@@ -17,7 +17,7 @@ body {
   --brand-green-dark: #045939;
   --brand-gray-default: #eff2f1;
   --brand-black-default: #141716;
-  --brand-green-base:#2E5344;
+  --brand-green-base: #2e5344;
   --bg-label: #e2ffbc;
 
   --title-100-light: #141716;
@@ -65,10 +65,10 @@ body {
 h1 {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-bold);
-  font-size:var( --font-size-title-md);
+  font-size: var(--font-size-title-md);
   line-height: 1;
-  margin-bottom:5px;
-  margin-top:10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 h2 {
@@ -84,21 +84,21 @@ h4 {
   font-size: var(--font-size-subtitle-mobile);
 }
 
-p, a {
+p,
+a {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-light);
   font-size: var(--font-size-base-md);
   @apply mb-3 break-words text-gray-600;
 }
 
-a{
+a {
   color: var(--brand-gray-default);
 }
 
-span{
+span {
   @apply text-(--brand-black-default);
 }
-
 
 button {
   background-color: var(--brand-green-default);
@@ -106,4 +106,3 @@ button {
   color: var(--brand-gray-default);
   border-radius: var(--radius-sm);
 }
-

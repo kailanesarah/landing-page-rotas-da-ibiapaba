@@ -5,22 +5,19 @@ import "../../css/components/header.css";
 import Container from "../../containers/containerDefault";
 
 const Header = () => {
-	return (
-
+  return (
     <header>
-    <Container>
-		<div className="header">
-			
-				<LogoRotas />
-				<NavBar />
-				<div className=" gap-4  items-center hidden md:flex flex-row">
-					<ButtonRegister text="Saiba mais!" />
-				</div>
-		
-		</div>
-    </Container>
+      <Container>
+        <div className="header">
+          <LogoRotas />
+          <NavBar />
+          <div className=" gap-4  items-center hidden md:flex flex-row">
+            <ButtonRegister text="Saiba mais!" />
+          </div>
+        </div>
+      </Container>
     </header>
-	);
+  );
 };
 
 export default Header;
