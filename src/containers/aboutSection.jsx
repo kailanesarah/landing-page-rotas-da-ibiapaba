@@ -1,41 +1,29 @@
-import fotoTeam from "../assets/img/fotoTeam.png";
-import fotoTeamAll from "../assets/img/fotoTeamAll.png";
 import LabelComponent from "../components/label";
+import video_img from ".././assets/img/cards/video_img.svg";
 import "../css/containers/aboutSection.css";
-import ValuesSection from "./valuesSection";
+import Container from "./containerDefault";
 
 const AboutSection = () => {
 	return (
-		<>
-			<section className="about-section ">
-				<div className="about container">
-					<div className="about-text-section">
-						<LabelComponent text="Sobre nós"/>
-						<h1>Somos a NexTech!</h1>
-						<p>
-							Rotas da Ibiapaba é uma solução desenvolvida pela empresa NexTech.
-							Nosso principal objetivo é proporcionar uma experiência completa,
-							ágil e sem complicação para turistas e estabelecimentos. <br />
-							<br />
-							Para os turistas, oferecemos a oportunidade de consumir produtos
-							típicos da Serra (como ingressos, souvenirs e muito mais) em
-							qualquer estabelecimento parceiro que tenha o totem de acesso,
-							garantindo praticidade e agilidade em suas visitas. <br />
-							<br />
-							Para os estabelecimentos, nossa solução permite que os
-							proprietários vendam seus produtos em uma rede de parceiros,
-							impulsionando as vendas e oferecendo mais agilidade no processo.
-						</p>
-					</div>
-
-					<div className="about-photos-section">
-						<img src={fotoTeam} alt="foto-equipe-nexTech" />
-						<img src={fotoTeamAll} alt="foto-equipe-nexTech" />
-					</div>
+		<section className="about">
+			<Container>
+			<div className="about__content">
+                <LabelComponent text="Sobre a solução"/>
+				<div className="about__text">
+					<h1>
+						Simples, rápido e eficiente!<br/> Veja o Rotas da Ibiapaba em ação.
+					</h1>
+					<p>
+						Veja como nossa plataforma funciona na prática e ajuda
+						estabelecimentos da serra a vender mais e ganhar visibilidade de
+						forma simples e rápida.
+					</p>
 				</div>
-			</section>
-			<ValuesSection />
-		</>
+
+                <img src={video_img} alt="about_img" />
+			</div>
+			</Container>
+		</section>
 	);
 };
 

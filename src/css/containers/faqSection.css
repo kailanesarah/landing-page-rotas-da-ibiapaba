@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
-.faq-section{
-    @apply flex flex-col items-center justify-center;
-  }
-  
-  .faq-text-section{
-    @apply w-full md:w-1/2 items-center justify-center;
-  
-    h1, p{
-      @apply text-center;
-    }
-  }
+
+.faq {
+  @apply w-full;
+}
+
+.faq__content {
+  @apply flex flex-col items-center justify-center space-y-10 max-w-4xl mx-auto text-center;
+}
+
+.faq__text h1 {
+  @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+.faq__text p {
+  @apply text-gray-600 text-lg leading-relaxed;
+}

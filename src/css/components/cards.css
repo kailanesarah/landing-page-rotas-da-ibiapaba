@@ -5,20 +5,18 @@
 }
 
 .card {
-  @apply w-full gap-2
-  h-auto rounded-(--radius-sm) items-center
-  justify-around flex flex-col m-10;
+  @apply w-full h-auto rounded-(--radius-sm) flex flex-col m-10 gap-2;
 }
 
 .card img {
-  @apply w-full h-50 rounded-(--radius-sm);
+  @apply w-full h-70 object-cover rounded-(--radius-sm);
 }
 
 .content-solution {
-  @apply flex flex-col gap-3 p-2 pb-4 h-50;
+  @apply h-30 flex flex-col gap-2 p-2 pb-4;
 
   h4,
   p {
-    @apply text-left;
+    @apply text-white text-left text-sm leading-tight;
   }
 }

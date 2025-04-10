@@ -17,6 +17,7 @@ body {
   --brand-green-dark: #045939;
   --brand-gray-default: #eff2f1;
   --brand-black-default: #141716;
+  --brand-green-base:#2E5344;
   --bg-label: #e2ffbc;
 
   --title-100-light: #141716;
@@ -64,8 +65,10 @@ body {
 h1 {
   font-family: var(--font-sans);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-title-mobile);
-  @apply leading-10 mb-1;
+  font-size:var( --font-size-title-md);
+  line-height: 1;
+  margin-bottom:5px;
+  margin-top:10px;
 }
 
 h2 {
@@ -84,8 +87,8 @@ h4 {
 p, a {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-base-mobile);
-  @apply mb-3 break-words ;
+  font-size: var(--font-size-base-md);
+  @apply mb-3 break-words text-gray-600;
 }
 
 a{
@@ -96,12 +99,6 @@ span{
   @apply text-(--brand-black-default);
 }
 
-.container {
-  max-height: 100%;
-  max-width: 100%;
-  @apply pt-10 pb-10 p-5 md:mb-50 md:p-(--spacing-md);
-}
-
 
 button {
   background-color: var(--brand-green-default);
@@ -110,21 +107,3 @@ button {
   border-radius: var(--radius-sm);
 }
 
-/* Responsividade */
-@media (min-width: 640px) { /* sm */
-  h1 { font-size: var(--font-size-title-sm); }
-  h2 { font-size: var(--font-size-subtitle-sm); }
-}
-
-@media (min-width: 768px) { /* md */
-  h1 { font-size: var(--font-size-title-md); }
-  h2 { font-size: var(--font-size-subtitle-md); }
-  p, a { font-size: var(--font-size-base-md); }
-  .container { padding: var(--spacing-lg); }
-}
-
-@media (min-width: 1024px) { /* lg */
-  h1 { font-size: var(--font-size-title-lg); }
-  h2 { font-size: var(--font-size-subtitle-lg); }
-  .container { padding: var(--spacing-xl); }
-}
