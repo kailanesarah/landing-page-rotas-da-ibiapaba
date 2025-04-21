@@ -24,10 +24,8 @@ const HeroSection = () => {
               Cadastre-se para ter acesso antecipado ao sistema que vai
               impulsionar suas vendas.
             </h1>
-            <p>Deixe seus dados na nossa lista exclusiva e saia na frente!</p>
+            <p>Cadastre-se e saia na frente!</p>
           </div>
-
-          <Form />
         </div>
       </Container>
     </section>

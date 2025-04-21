@@ -5,7 +5,7 @@ import LabelComponent from "../components/label";
 import ButtonRegister from "../components/buttonRegister";
 const PartnersCard = () => {
   return (
-    <section className="partners__card">
+    <section className="partners__card" id="partners">
       <div className="partners__wrapper">
         <div className="partners__image">
           <img
@@ -31,8 +31,6 @@ const PartnersCard = () => {
                 eficiente. Clique no botão abaixo e confira os parceiros mais
                 próximos de você!
               </p>
-
-              <ButtonRegister text="Buscar parceiros" />
             </div>
           </Container>
         </div>

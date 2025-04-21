@@ -31,29 +31,30 @@ const NavBar = () => {
             </button>
           )}
           <ul className="menu-list">
+          
             <li>
-              <a href="/home" onClick={() => setIsOpen(false)}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" onClick={() => setIsOpen(false)}>
+              <a href="#solution" onClick={() => setIsOpen(false)}>
                 Soluções
               </a>
             </li>
             <li>
-              <a href="/security" onClick={() => setIsOpen(false)}>
+              <a href="#security" onClick={() => setIsOpen(false)}>
                 Segurança
               </a>
             </li>
             <li>
-              <a href="/about-us" onClick={() => setIsOpen(false)}>
-                Sobre nós
+              <a href="#partners" onClick={() => setIsOpen(false)}>
+                Parcerias
               </a>
             </li>
             <li>
-              <a href="/faq" onClick={() => setIsOpen(false)}>
+              <a href="#faq" onClick={() => setIsOpen(false)}>
                 Perguntas (FAQ)
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => setIsOpen(false)}>
+                Entre em contato
               </a>
             </li>
           </ul>

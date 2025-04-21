@@ -2,7 +2,7 @@ import PartnersCard from "../components/partnersCard";
 
 const PartnersSection = () => {
   return (
-    <section>
+    <section className="partners" id="partners">
       <PartnersCard />
     </section>
   );
