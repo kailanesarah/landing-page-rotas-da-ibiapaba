@@ -48,6 +48,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
+              <a href="#diffence" onClick={() => setIsOpen(false)}>
+                Diferenciais
+              </a>
+            </li>
+            <li>
               <a href="#faq" onClick={() => setIsOpen(false)}>
                 Perguntas (FAQ)
               </a>

@@ -1,11 +1,10 @@
 @import "tailwindcss";
 .partners__card {
-  @apply w-full py-15 px-0;
+  @apply w-full px-0;
 }
 
 .partners__wrapper {
-  @apply flex flex-col 
-  md:flex-row overflow-hidden
+  @apply flex flex-col md:flex-row overflow-hidden
    w-full ;
 }
 

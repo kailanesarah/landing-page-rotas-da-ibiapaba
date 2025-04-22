@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .hero {
-  @apply relative w-full h-300 overflow-hidden md:h-150 lg:h-150;
+  @apply relative w-full h-200 overflow-hidden md:h-180 lg:h-180;
 }
 
 .hero__image {
@@ -18,10 +18,13 @@
 }
 
 .hero__text {
-  @apply flex flex-col gap-4 items-center text-center  text-white w-full max-w-xl md:w-1/2  ;
+  @apply flex flex-col gap-4 items-center text-center  text-white w-full max-w-xl md:w-full  ;
 
   h1, p{
     @apply text-white ;
 
+  }
+  span {
+    @apply text-(--brand-black-default);
   }
 }

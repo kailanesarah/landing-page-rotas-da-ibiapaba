@@ -4,6 +4,7 @@ import LabelComponent from "../components/label";
 import Header from "../components/header/header";
 import Form from "../components/header/form";
 import Container from "./containerDefault";
+import ButtonRegister from "../components/buttonRegister";
 
 const HeroSection = () => {
   return (
@@ -22,9 +23,10 @@ const HeroSection = () => {
             <LabelComponent text="Lançamento em breve!" />
             <h1>
               Cadastre-se para ter acesso antecipado ao sistema que vai
-              impulsionar suas vendas.
+              impulsionar suas vendas e trazer mais visibilidade para o seu
+              negócio.
             </h1>
-            <p>Cadastre-se e saia na frente!</p>
+            <ButtonRegister text="Cadastre-se e saia na frente!" />
           </div>
         </div>
       </Container>

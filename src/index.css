@@ -110,9 +110,7 @@ a {
   color: var(--brand-gray-default);
 }
 
-span {
-  @apply text-(--brand-black-default);
-}
+
 
 button {
   background-color: var(--brand-green-default);
