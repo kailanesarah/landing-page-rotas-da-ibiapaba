@@ -9,7 +9,6 @@ export default function TabelaUsuarios() {
 		"Experiência simples e segura",
 		"Comunidade de empreendedores",
 		"Visibilidade em locais movimentados",
-		"Taxas e comissões justas",
 	];
 
 	return (
@@ -36,7 +35,7 @@ export default function TabelaUsuarios() {
 						</tr>
 					))}
 					<tr>
-					<td className="inicio tabela-coluna-texto rounded-bl-2xl">Taxas e comissões justas</td>
+					<td className="inicio tabela-coluna-texto rounded-bl-2xl"> Taxas e comissões justas</td>
 							<td className="meio tabela-coluna-icone ">
 								<Check className="icone icone-check " />
 							</td>

@@ -4,7 +4,7 @@ import Container from "./containerDefault";
 
 const DifferenceSection = () => {
 	return (
-		<section className="difference hidden md:flex flex-col" id="diffence">
+		<section className="difference hidden md:flex flex-col" id="difference">
 			<Container>
 				<div className="flex flex-col items-center justify-center rounded-2xl bg-(--brand-gray-default) p-16">
 					

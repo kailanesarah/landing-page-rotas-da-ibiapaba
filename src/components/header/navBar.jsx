@@ -3,70 +3,73 @@ import { Menu, X } from "lucide-react";
 import "../../css/components/header.css";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+	const [active, setActive] = useState(null); 
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+	const menuItems = [
+		{ id: "solution", label: "Soluções" },
+		{ id: "security", label: "Segurança" },
+		{ id: "partners", label: "Sobre nós" },
+		{ id: "difference", label: "Diferenciais" },
+		{ id: "faq", label: "FAQ" },
+		{ id: "contact", label: "Entre em contato" },
+	];
 
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        {/* Mobile Menu Button */}
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button
-          className="menu-button"
-          onClick={toggleMenu}
-          style={{ color: "white" }}
-        >
-          {isOpen ? <X className="icon" /> : <Menu className="icon" />}
-        </button>
+	const toggleMenu = () => {
+		setIsOpen(!isOpen);
+	};
 
-        {/* Menu Items */}
-        <div className={`menu-container ${isOpen ? "open" : ""}`}>
-          {isOpen && (
-            // biome-ignore lint/a11y/useButtonType: <explanation>
-            <button className="close-button" onClick={toggleMenu}>
-              <X className="icon-close" style={{ color: "white" }} />
-            </button>
-          )}
-          <ul className="menu-list">
-          
-            <li>
-              <a href="#solution" onClick={() => setIsOpen(false)}>
-                Soluções
-              </a>
-            </li>
-            <li>
-              <a href="#security" onClick={() => setIsOpen(false)}>
-                Segurança
-              </a>
-            </li>
-            <li>
-              <a href="#partners" onClick={() => setIsOpen(false)}>
-                Parcerias
-              </a>
-            </li>
-            <li>
-              <a href="#diffence" onClick={() => setIsOpen(false)}>
-                Diferenciais
-              </a>
-            </li>
-            <li>
-              <a href="#faq" onClick={() => setIsOpen(false)}>
-                Perguntas (FAQ)
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => setIsOpen(false)}>
-                Entre em contato
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+	const handleClick = (e, id) => {
+		e.preventDefault(); 
+		setActive(id); 
+		const section = document.getElementById(id);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" }); 
+		}
+		setIsOpen(false); 
+	};
+
+	return (
+		<nav className="navbar">
+			<div className="navbar-container">
+			
+				<button
+					className="menu-button"
+					onClick={toggleMenu}
+					style={{ color: "white" }}
+				>
+					{isOpen ? <X className="icon" /> : <Menu className="icon" />}
+				</button>
+
+				<div className={`menu-container ${isOpen ? "open" : ""}`}>
+					{isOpen && (
+					
+						<button className="close-button" onClick={toggleMenu}>
+							<X className="icon-close" style={{ color: "white" }} />
+						</button>
+					)}
+					<ul className="menu">
+						<li className="menu-list">
+							{menuItems.map((item) => (
+								<a
+									key={item.id}
+									href={`#${item.id}`}
+									onClick={(e) => handleClick(e, item.id)}
+									style={{
+										color: active === item.id ? "#045939" : "#4a5565 ",
+										borderBottom:
+											active === item.id ? "1px solid #045939" : "none",
+									}}
+								>
+									{item.label}
+								</a>
+							))}
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	);
 };
 
 export default NavBar;
