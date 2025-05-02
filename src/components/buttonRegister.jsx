@@ -9,7 +9,7 @@ const ButtonRegister = ({ text }) => {
   return (
     <button onClick={section}
       type="button"
-      className="p-2 w-full bg-(--brand-green-dark) text-white font-semibold rounded-md 
+      className="p-2 w-full bg-(--brand-green-default) text-white font-semibold rounded-md 
                 transition-transform duration-300 hover:scale-105 cursor-pointer"
     >
       {text}

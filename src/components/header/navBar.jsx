@@ -34,9 +34,8 @@ const NavBar = () => {
 			<div className="navbar-container">
 			
 				<button
-					className="menu-button"
+					className="menu-button text-white"
 					onClick={toggleMenu}
-					style={{ color: "white" }}
 				>
 					{isOpen ? <X className="icon" /> : <Menu className="icon" />}
 				</button>
@@ -45,7 +44,7 @@ const NavBar = () => {
 					{isOpen && (
 					
 						<button className="close-button" onClick={toggleMenu}>
-							<X className="icon-close" style={{ color: "white" }} />
+							<X className="icon-close text-white" />
 						</button>
 					)}
 					<ul className="menu">
@@ -56,9 +55,9 @@ const NavBar = () => {
 									href={`#${item.id}`}
 									onClick={(e) => handleClick(e, item.id)}
 									style={{
-										color: active === item.id ? "#045939" : "#4a5565 ",
+										color: active === item.id ? "#045939" : "",
 										borderBottom:
-											active === item.id ? "1px solid #045939" : "none",
+											active === item.id ? "2px solid #045939" : "",
 									}}
 								>
 									{item.label}

@@ -24,7 +24,7 @@ const CardSolution = () => {
       image: totem,
       title: "Venda com facilidade, ganhe com a nossa rede",
       description:
-        "Com o totem, você vende mais, lucra com comissões e fortalece a presença do seu negócio entre os mais bem avaliados.",
+        "Com nosso totem, seu negócio atrai mais clientes, vende mais e ainda fatura com comissões atrativas. Destaque-se entre os estabelecimentos mais bem avaliados e ganhe visibilidade e credibilidade no mercado!",
     },
     {
       id: 3,
